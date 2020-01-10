@@ -1,0 +1,94 @@
+body {
+    background-color: #050210;
+}
+
+#container {
+    width: 500px;
+    height: 350px;
+    background-color: #050210;
+    margin: 0 auto;
+}
+
+
+#krug {
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+    animation-name: animacija;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes animacija {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(240deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#inner-krug-dva {
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    background-color: #050210;
+    position: relative;
+    left: 115px;
+    bottom: 290px;
+}
+
+#pulsiranje {
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    background-color:  rgb(43, 5, 43);
+    position: absolute; 
+    animation-name: puls;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes puls {
+    from {
+    color: rgb(43, 5, 43);
+    transform: scale(.25, .25);
+    opacity: .5; 
+    }
+    to { 
+    color: rgb(43, 5, 43);
+    transform: scale(1, 1);
+    opacity: 0; 
+    }
+}
+
+#krug-blur {
+    display: inline;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    filter: blur(30px);
+    margin: 0 auto;
+    margin-left: 75px;
+    margin-top: -18px;
+    position: absolute;
+    animation-name: animacija;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+    
+
+
